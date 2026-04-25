@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*") // Allows your Render frontend to talk to this API@RestController
+@RestController
 @RequestMapping("/dizon/songs")
+@CrossOrigin(origins = "*")
 public class SongController {
 
     @Autowired
